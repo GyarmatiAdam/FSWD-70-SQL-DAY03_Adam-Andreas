@@ -1,4 +1,3 @@
-hire_date
 Report 1:
 SELECT COUNT(*) AS row_numbers FROM departments;
 SELECT COUNT(*) AS row_numbers FROM dept_emp;

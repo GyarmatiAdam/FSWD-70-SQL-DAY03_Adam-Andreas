@@ -39,7 +39,8 @@ SELECT COUNT(*) AS salaries_higher_70
 FROM salaries
 WHERE salary > 70000;
 
-/* That is the query which caused MY UNPATIENCE ;-) */
+/* That is the query which caused MY UNPATIENCE. ;-)
+I'm not sure if it works. I think learned it that way from 2004 to 2006 in school. */
 SELECT first_name, last_name, salary
 FROM employees, salaries
 WHERE salary > 70000

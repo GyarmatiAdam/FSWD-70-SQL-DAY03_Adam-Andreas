@@ -40,7 +40,11 @@ SELECT COUNT(*) AS salaries_higher_70
 FROM salaries
 WHERE salary > 70000;
 
-SELECT 
+/* That is the query which caused MY UNPATIENCE ;-) */
+SELECT first_name, last_name, salary
+FROM employees, salaries
+WHERE salary > 70000
+AND employees.emp_no = salaries.emp_no;
 
 Report 7:
 SELECT COUNT(*) AS 

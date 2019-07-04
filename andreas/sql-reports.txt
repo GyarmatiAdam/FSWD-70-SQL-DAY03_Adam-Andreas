@@ -1,0 +1,46 @@
+hire_date
+Report 1:
+SELECT COUNT(*) AS row_numbers FROM departments;
+SELECT COUNT(*) AS row_numbers FROM dept_emp;
+SELECT COUNT(*) AS row_numbers FROM dept_manager;
+SELECT COUNT(*) AS row_numbers FROM employees;
+SELECT COUNT(*) AS row_numbers FROM salaries;
+SELECT COUNT(*) AS row_numbers FROM titles;
+
+Report 2:
+SELECT COUNT(*) AS number_of_Marks_in_company
+FROM employees
+WHERE first_name = 'Mark';
+
+Report 3:
+SELECT COUNT(*) AS number_of_Erics_A_in_company
+FROM employees
+WHERE first_name = 'Eric' AND last_name LIKE 'A%';
+
+Report 4:
+SELECT emp_no, last_name, first_name, hire_date
+FROM employees
+WHERE hire_date > '1984-12-31' ORDER BY last_name;
+
+SELECT COUNT(*) AS number_of_employees_since_1985
+FROM employees
+WHERE YEAR(hire_date) >= 1985;
+
+Report 5:
+SELECT emp_no, last_name, first_name, hire_date
+FROM employees
+WHERE YEAR(hire_date) BETWEEN 1990 AND 1997 ORDER BY hired_year;
+
+SELECT COUNT(*) AS number_of_emp_hired_1990_1997
+FROM employees
+WHERE YEAR(hire_date) BETWEEN 1990 AND 1997;
+
+Report 6:
+SELECT COUNT(*) AS salaries_higher_70
+FROM salaries
+WHERE salary > 70000;
+
+SELECT 
+
+Report 7:
+SELECT COUNT(*) AS 
